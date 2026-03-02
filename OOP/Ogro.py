@@ -1,3 +1,4 @@
+import random
 from Enemigo import *
 
 class Ogro (Enemigo):
@@ -6,3 +7,10 @@ class Ogro (Enemigo):
         
     def habla(self):
         print("Ogro aplastar todo!!!")
+
+        def atque_especial(self):
+            print("Ogro ataque especial")
+            funcio_ataque_especial = random.random() < 0.20
+            if funcio_ataque_especial:
+                self.ataque += 4
+                print("Ogro enojado y incremento su ataque por 4")
